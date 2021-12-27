@@ -89,3 +89,22 @@ echo "The Query String you input in Hex becomes : ".strToHex($id);
 
 
  
+<html>
+<body>
+
+    <?php
+
+				echo "<br>";
+                echo "<br>";
+                echo "<html>Your MySQL command was:\r\n </html>";
+                echo "<br>";
+                echo $sql;
+                echo "<br>";
+                echo "<br>";
+                echo "To which the server responded with:";
+                echo "<br>";
+                print_r(mysqli_error($con));
+    ?>
+
+</body>
+</html>

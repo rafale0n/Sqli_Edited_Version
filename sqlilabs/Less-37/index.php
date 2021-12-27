@@ -118,3 +118,22 @@ echo "Hint: The Password you input is escaped as : ".$passwd ."<br>";
 </div>
 </body>
 </html>
+<html>
+<body>
+
+    <?php
+
+				echo "<br>";
+                echo "<br>";
+                echo "<html>Your MySQL command was:\r\n </html>";
+                echo "<br>";
+                echo $sql;
+                echo "<br>";
+                echo "<br>";
+                echo "To which the server responded with:";
+                echo "<br>";
+                print_r(mysqli_error($con));
+    ?>
+
+</body>
+</html>

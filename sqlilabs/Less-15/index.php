@@ -98,3 +98,22 @@ if(isset($_POST['uname']) && isset($_POST['passwd']))
 </div>
 </body>
 </html>
+<html>
+<body>
+
+    <?php
+
+				echo "<br>";
+                echo "<br>";
+                echo "<html>Your MySQL command was:\r\n </html>";
+                echo "<br>";
+                echo $sql;
+                echo "<br>";
+                echo "<br>";
+                echo "To which the server responded with:";
+                echo "<br>";
+                print_r(mysqli_error($con));
+    ?>
+
+</body>
+</html>
